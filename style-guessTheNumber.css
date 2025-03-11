@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Josefin Sans", sans-serif;
+
+  @media (max-width: 500px) {
+    font-size: 50%;
+  }
+}
+
+body {
+  background-color: #333;
+}
+
+.head-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+
+  @media (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.heading-1 {
+  color: white;
+  grid-column: 2 / 3;
+  font-size: 4.5rem;
+  text-align: center;
+}
+
+.leaderboard-btn {
+  width: 20rem;
+  margin: 0 auto;
+  font-family: inherit;
+  height: 4rem;
+  border-radius: 5px;
+  background-color: white;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  @media (max-width: 500px) {
+    margin-top: 2rem;
+  }
+}
+
+.leaderboard-btn:hover {
+  border: 2px solid white;
+  background-color: black;
+  color: white;
+}
+
+.leaderboard {
+  display: block;
+  margin: 5rem auto;
+  width: 50rem;
+  color: white;
+  font-size: 2rem;
+  background-color: black;
+  padding: 2rem 2.5rem;
+  border-radius: 11px;
+  transition: all 0.5s;
+
+  @media (max-width: 500px) {
+    width: 30rem;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.text {
+  color: white;
+  text-align: center;
+  font-size: 2.3rem;
+  margin-top: 3rem;
+}
+
+.hidden-number {
+  display: block;
+  width: 13rem;
+  height: 13rem;
+  margin: 2.5rem auto;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden-number p {
+  font-size: 3.5rem;
+}
+
+.guesses {
+  font-size: 1.7rem;
+  text-align: center;
+  margin-top: 2rem;
+  color: white;
+}
+
+.input {
+  display: block;
+  margin: 1rem auto;
+  height: 3rem;
+  text-align: center;
+  font-size: 2rem;
+  width: 10rem;
+  font-family: inherit;
+}
+
+.check {
+  display: block;
+  margin: 1rem auto;
+  height: 3rem;
+  width: 8rem;
+  font-family: inherit;
+  font-size: 1.7rem;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background-color: gold;
+}
+
+.try-again {
+  display: block;
+  margin: 1rem auto;
+  width: 10rem;
+  height: 3rem;
+  font-family: inherit;
+  font-size: 1.7rem;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  transition: all 0.5s;
+  visibility: hidden;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.try-again:hover {
+  color: white;
+  background-color: black;
+  border: 2px solid white;
+}
+
+.main {
+  position: relative;
+}
+
+.ranked {
+  position: absolute;
+  top: 0%;
+  left: 10%;
+
+  @media (max-width: 500px) {
+    bottom: 0%;
+    top: 110%;
+    left: 20%;
+  }
+}
+
+.ranked-img {
+  height: 25rem;
+  width: 28rem;
+}
+
+.text-rank {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 2rem;
+}

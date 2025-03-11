@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess my number</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style-guessTheNumber.css" />
+  </head>
+  <body>
+    <div class="head-grid">
+      <h1 class="heading-1">Guess my number</h1>
+      <button class="leaderboard-btn">Leaderboard🏆</button>
+    </div>
+
+    <div class="leaderboard hidden">
+      Leaderboard is currently not in function:( Please try again later.
+    </div>
+
+    <section class="main">
+      <p class="text">Start guessing...</p>
+      <input class="input" type="number" />
+      <button class="check">Check!!!</button>
+      <button class="try-again">Try Again</button>
+      <figure class="hidden-number"><p class="number">?</p></figure>
+      <p class="guesses">
+        Number of guesses: <span class="guess-counter">5</span>
+      </p>
+      <div class="ranked">
+        <p class="text-rank">
+          You are in <span class="rank">bronze</span> rank
+        </p>
+        <img src="bronzeRank.png" class="ranked-img" />
+      </div>
+    </section>
+
+    <script src="js-guessTheNumber.js"></script>
+  </body>
+</html>
